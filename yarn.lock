@@ -480,6 +480,28 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@liveblocks/client@^1.10.0", "@liveblocks/client@1.10.0":
+  version "1.10.0"
+  resolved "https://registry.npmjs.org/@liveblocks/client/-/client-1.10.0.tgz"
+  integrity sha512-UL32qEgjYdUaQbTBnMAegab4umVRQYFJEBccVW94hDc2wwxdf0rIcqZTvZOX2vqmWXWhKiIiWo1Pu8rCTorFfg==
+  dependencies:
+    "@liveblocks/core" "1.10.0"
+
+"@liveblocks/core@1.10.0":
+  version "1.10.0"
+  resolved "https://registry.npmjs.org/@liveblocks/core/-/core-1.10.0.tgz"
+  integrity sha512-FwIHCITs34GrsjEx9gty+4KQQ89IDjKoivuuqDio0oSoZeZn2z5QxOfX6T2E189HDrviTp2998vtz7kKQLCPiA==
+
+"@liveblocks/react@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.npmjs.org/@liveblocks/react/-/react-1.10.0.tgz"
+  integrity sha512-SASkpQFeeHtD3QG+4sCZ9v4ofVyhZB3EE1jYTSzvnVMaoxThyOlxt5FRzRa/XZRpjihbQOpI6vLdiZGZDBgVJw==
+  dependencies:
+    "@liveblocks/client" "1.10.0"
+    "@liveblocks/core" "1.10.0"
+    nanoid "^3"
+    use-sync-external-store "^1.2.0"
+
 "@next/env@14.1.0":
   version "14.1.0"
   resolved "https://registry.npmjs.org/@next/env/-/env-14.1.0.tgz"
@@ -3105,7 +3127,7 @@ mz@^2.7.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nanoid@^3.3.6, nanoid@^3.3.7:
+nanoid@^3, nanoid@^3.3.6, nanoid@^3.3.7:
   version "3.3.7"
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.7.tgz"
   integrity sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==
@@ -3590,7 +3612,7 @@ react-style-singleton@^2.2.1:
     invariant "^2.2.4"
     tslib "^2.0.0"
 
-react@*, "react@^16.11.0 || ^17.0.0 || ^18.0.0", "react@^16.5.1 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0  || ^17 || ^18", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", react@^18, react@^18.0.0, react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16, react@>=16.8, react@>=16.8.0:
+react@*, "react@^16.11.0 || ^17.0.0 || ^18.0.0", "react@^16.14.0 || ^17 || ^18", "react@^16.5.1 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0  || ^17 || ^18", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", react@^18, react@^18.0.0, react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16, react@>=16.8, react@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
