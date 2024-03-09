@@ -4,6 +4,7 @@ import { ReactNode } from "react"
 import { ClientSideSuspense} from "@liveblocks/react"
 
 import { RoomProvider } from "@/liveblocks.config"
+import { Cursor } from "@/app/board/[boardId]/_components/cursor";
 
 interface RoomProps { 
   children: ReactNode,
@@ -17,7 +18,7 @@ export const Room = ({
   fallback
 }: RoomProps) => {
   return (
-    <RoomProvider id={roomId} initialPresence={{}}>
+    <RoomProvider id={roomId} initialPresence={{ cursor: null }}>
       <ClientSideSuspense fallback={fallback}>
         {() => children}
       </ClientSideSuspense>
