@@ -24,7 +24,7 @@ export const LayerPreview = memo(({
   switch (layer.type) {
     case LayerType.Rectangle:
       return (
-        <Rectangle 
+        <Rectangle
           id={id}
           selectionColor={selectionColor}
           layer={layer}
@@ -43,10 +43,7 @@ export const LayerPreview = memo(({
     default:
       console.log("Unknown layer type")
       return null
-    
   }
-
-
 })
 
 LayerPreview.displayName = "LayerPreview"
