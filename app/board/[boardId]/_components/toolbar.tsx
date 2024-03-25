@@ -1,4 +1,4 @@
-import { Circle, MousePointer2, Pencil, Redo2, Square, StickyNote, Type, Undo2 } from "lucide-react";
+import { Circle, MousePointer2, PencilLine, Redo2, Square, StickyNote, Type, Undo2 } from "lucide-react";
 import { ToolButton } from "./tool-button";
 import { CanvasMode, CanvasState, LayerType } from "@/types/canvas";
 
@@ -86,7 +86,7 @@ export const Toolbar = ({
         />
         <ToolButton 
           label="Pen"
-          icon={Pencil}
+          icon={PencilLine}
           isActive={
             canvasState.mode === CanvasMode.Pencil
           }
