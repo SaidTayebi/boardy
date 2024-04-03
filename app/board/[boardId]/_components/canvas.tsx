@@ -286,10 +286,10 @@ export const Canvas = ({
         undo={history.undo}
         redo={history.redo}
       />
-      <SelectionTools 
+      {  ![CanvasMode.Translating, CanvasMode.SelectionNet].includes(canvasState.mode) && <SelectionTools 
         camera={camera}
         setLastUsedColor={setLastUsedColor}
-      />
+      />}
       <svg
         className="h-[100vh] w-[100vw]"
         onWheel={onWheel}
