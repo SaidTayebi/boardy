@@ -18,7 +18,7 @@ const DashboardLayout = ({
           <OrgSidebar /> 
           <div className="h-full flex-1">
             <Navbar />
-        {children}
+            {children}
           </div>
 
         </div>

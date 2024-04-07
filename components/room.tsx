@@ -2,10 +2,7 @@
 
 import { ReactNode } from "react"
 import { ClientSideSuspense} from "@liveblocks/react"
-
 import { RoomProvider } from "@/liveblocks.config"
-import { Cursor } from "@/app/board/[boardId]/_components/cursor";
-import { Layers } from "lucide-react";
 import { LiveList, LiveMap, LiveObject } from "@liveblocks/client";
 import { Layer } from "@/types/canvas";
 
